@@ -61,7 +61,7 @@ public class BookMain {
         System.out.println("Output from our XML File: ");
         Unmarshaller um = context.createUnmarshaller();
         Bookstore bookstore2 = (Bookstore) um.unmarshal(new FileReader(BOOKSTORE_XML));
-        ArrayList<Book> list = bookstore2.getBooksList();
+        ArrayList<Book> list = bookstore2.getBookList();
         for (Book book : list) {
             System.out.println("Book: " + book.getName() + " from "
                     + book.getAuthor());

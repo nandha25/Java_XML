@@ -2,25 +2,24 @@ package com.xml.jaxb.model;
 
 import java.util.ArrayList;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 
 /**
  * Created by nandh on 28-08-2016.
  */
 //This statement means that class "Bookstore.java" is the root-element of our example
 @XmlRootElement(namespace = "com.xml.jaxb.model")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Bookstore {
     // XmLElementWrapper generates a wrapper element around XML representation
-    @XmlElementWrapper(name = "bookList")
+    @XmlElementWrapper(name = "booksList")
     // XmlElement sets the name of the entities
     @XmlElement(name = "book")
     private ArrayList<Book> bookList;
     private String name;
     private String location;
 
-    public ArrayList<Book> getBooksList() {
+    public ArrayList<Book> getBookList() {
         return bookList;
     }
 

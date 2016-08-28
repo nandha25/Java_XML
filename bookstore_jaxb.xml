@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:bookstore xmlns:ns2="com.xml.jaxb.model">
-    <bookList>
+    <booksList>
         <book>
             <author>Neil Strauss</author>
             <title>The Game</title>
@@ -13,7 +13,7 @@
             <publisher>Dumont Buchverlag</publisher>
             <isbn>978-3832180577</isbn>
         </book>
-    </bookList>
-    <location>Frankfurt Airport</location>
+    </booksList>
     <name>Fraport Bookstore</name>
+    <location>Frankfurt Airport</location>
 </ns2:bookstore>
