@@ -18,7 +18,7 @@ import com.xml.jaxb.model.Bookstore;
 
 public class BookMain {
 
-    private static final String BOOKSTORE_XML = "./bookstore-jaxb.xml";
+    private static final String BOOKSTORE_XML = "bookstore_jaxb.xml";
 
     public static void main(String[] args) throws JAXBException, IOException {
 
@@ -61,7 +61,7 @@ public class BookMain {
         System.out.println("Output from our XML File: ");
         Unmarshaller um = context.createUnmarshaller();
         Bookstore bookstore2 = (Bookstore) um.unmarshal(new FileReader(BOOKSTORE_XML));
-        ArrayList<Book> list = bookstore2.getBookList();
+        ArrayList<Book> list = bookstore2.getBooksList();
         for (Book book : list) {
             System.out.println("Book: " + book.getName() + " from "
                     + book.getAuthor());

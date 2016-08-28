@@ -20,7 +20,7 @@ public class Bookstore {
     private String name;
     private String location;
 
-    public ArrayList<Book> getBookList() {
+    public ArrayList<Book> getBooksList() {
         return bookList;
     }
 
